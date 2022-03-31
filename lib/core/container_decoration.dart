@@ -55,12 +55,13 @@ class Widgets {
           child: Center(
             child: Text(
               text,
-              style: TextStyle(fontSize: getH(17), color:textColor ?? Colors.white),
+              style: TextStyle(
+                  fontSize: getH(17), color: textColor ?? Colors.white),
             ),
           ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
-            color: color ??  Color(0xff058F1A),
+            color: color ?? Color(0xff058F1A),
           )),
       onTap: () {
         Navigator.pushNamed(context!, "/${page}");
@@ -72,6 +73,48 @@ class Widgets {
     return BoxDecoration(
       image: DecorationImage(
         image: AssetImage(imagehalal),
+      ),
+    );
+  }
+
+  static formFieldDecoration({required String hintText}) {
+    return InputDecoration(
+      hintText: hintText,
+      labelText: hintText,
+      hintStyle: TextStyle(
+        fontSize: getH(16),
+      ),
+      labelStyle: TextStyle(
+        fontSize: getH(16),
+      ),
+    );
+  }
+
+  static tarmoqContainer(
+      {required double height,
+      required double width,
+      required String assetImage,
+      required String text}) {
+    return Container(
+      height: getH(height),
+      width: getW(width),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        color: const Color(0xffF2F1F7),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CircleAvatar(
+            radius: getH(18),
+            backgroundImage: AssetImage(assetImage),
+          ),
+          SizedBox(width: getW(15)),
+          Text(
+            text,
+            style: TextStyle(fontSize: getH(19), color: Colors.black),
+          ),
+        ],
       ),
     );
   }

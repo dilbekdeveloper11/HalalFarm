@@ -15,9 +15,12 @@ class SignUpPageOne extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.only(top: getH(32.7), left: getW(315)),
-            child: Text(
-              "Skip",
-              style: TextStyle(fontSize: getH(18), color: Colors.white),
+            child: TextButton(
+              onPressed: () {},
+              child: Text(
+                "Skip",
+                style: TextStyle(fontSize: getH(18), color: Colors.white),
+              ),
             ),
           ),
           SizedBox(height: getH(16)),
@@ -60,6 +63,15 @@ class SignUpPageOne extends StatelessWidget {
             textColor: Colors.black,
             context: context,
             page: "signUpTwo",
+          ),
+          SizedBox(height: getH(30)),
+          TextButton(
+            onPressed: () {},
+            child: Text(
+              "Akkauntga kirish",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: getH(17), color: Colors.white),
+            ),
           ),
         ],
       ),
