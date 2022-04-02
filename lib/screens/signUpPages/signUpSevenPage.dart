@@ -72,7 +72,7 @@ class SignUpPageSeven extends StatelessWidget {
             ),
           ),
           SizedBox(height: getH(270)),
-          Widgets.Buttoncontainer(text: "Tasdiqlash",page: "loginOne")
+          Widgets.Buttoncontainer(text: "Tasdiqlash",context: context,page: "planpage")
         ],
       ),
     );

@@ -16,7 +16,9 @@ class SignUpPageOne extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(top: getH(32.7), left: getW(315)),
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, "/planpage");
+              },
               child: Text(
                 "Skip",
                 style: TextStyle(fontSize: getH(18), color: Colors.white),
@@ -66,7 +68,9 @@ class SignUpPageOne extends StatelessWidget {
           ),
           SizedBox(height: getH(30)),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, "/loginOne");
+            },
             child: Text(
               "Akkauntga kirish",
               textAlign: TextAlign.center,
