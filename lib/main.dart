@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:halalfarm/router/routers.dart';
+import 'package:halalfarm/screens/homePages/home_page.dart';
 import 'package:halalfarm/screens/splashScreen_page.dart';
 
 void main() {
@@ -18,8 +19,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily:"Zilla",
       ),
-      initialRoute: "/",
-      onGenerateRoute: RouterHelper().OnGenerateRoute,
+      home: const HomePage(),
+      // initialRoute: "/",
+      // onGenerateRoute: RouterHelper().OnGenerateRoute,
     );
   }
 }
