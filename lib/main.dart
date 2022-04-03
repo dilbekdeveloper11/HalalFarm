@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:halalfarm/router/routers.dart';
+import 'package:halalfarm/screens/homePages/animal_inner_page.dart';
 import 'package:halalfarm/screens/homePages/home_page.dart';
 import 'package:halalfarm/screens/splashScreen_page.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily:"Zilla",
       ),
-      home: const HomePage(),
+      home: const AnimalInnnerPage(),
       // initialRoute: "/",
       // onGenerateRoute: RouterHelper().OnGenerateRoute,
     );
