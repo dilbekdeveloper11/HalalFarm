@@ -9,8 +9,10 @@ class Widgets {
       double topRight = 0,
       double bottomLeft = 0,
       double bottomRight = 0,
+      Color? bordercolor,
       Color? color}) {
     return BoxDecoration(
+      border: Border.all(color: bordercolor ?? Colors.transparent),
       borderRadius: BorderRadius.only(
         topLeft: Radius.circular(topLeft),
         topRight: Radius.circular(topRight),
