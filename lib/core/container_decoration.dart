@@ -9,10 +9,10 @@ class Widgets {
       double topRight = 0,
       double bottomLeft = 0,
       double bottomRight = 0,
-      Color? bordercolor,
+      
       Color? color}) {
     return BoxDecoration(
-      border: Border.all(color: bordercolor ?? Colors.transparent),
+      
       borderRadius: BorderRadius.only(
         topLeft: Radius.circular(topLeft),
         topRight: Radius.circular(topRight),
@@ -25,14 +25,16 @@ class Widgets {
     );
   }
 
-  static Decoration decoration(
+  static decoration(
       {double? radius,
+      Color? bordercolor,
       double topLeft = 0,
       double topRight = 0,
       double bottomLeft = 0,
       double bottomRight = 0,
       Color? color}) {
     return BoxDecoration(
+      
       borderRadius: BorderRadius.only(
         topLeft: Radius.circular(topLeft),
         topRight: Radius.circular(topRight),
@@ -49,6 +51,7 @@ class Widgets {
     String? page,
     Color? color,
     Color? textColor,
+    Color? bordercolor,
   }) {
     return InkWell(
       child: Container(
@@ -62,6 +65,7 @@ class Widgets {
             ),
           ),
           decoration: BoxDecoration(
+           border: Border.all(color: bordercolor ?? Colors.transparent),
             borderRadius: BorderRadius.circular(12),
             color: color ?? Color(0xff058F1A),
           )),
